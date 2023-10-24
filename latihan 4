@@ -1,0 +1,16 @@
+def hitung_angka_dibagi_habis(daftar_angka, pemisah):
+    jumlah = 0
+    for angka in daftar_angka:
+        if angka % pemisah == 0:
+            jumlah += angka
+        return jumlah
+#contoh penggunaan fungsi
+daftar_angka1 = [20,40,80,100,120,140]
+pemisah1 = 20 
+hasil1 = hitung_angka_dibagi_habis (daftar_angka1, pemisah1)
+print(f"jumlah angka yang dapat dibagi habis oleh {pemisah1} adalah {hasil1}")
+
+daftar_angka2 = [9,18,27,36,45,54,63]
+pemisah2 = 9 
+hasil2 = hitung_angka_dibagi_habis (daftar_angka2, pemisah2)
+print(f"jumlah angka yang dapat dibagi habis oleh {pemisah2} adalah {hasil2}")
