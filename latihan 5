@@ -1,0 +1,44 @@
+def penambahan (num1, num2):
+    return num1 + num2
+def pengurangan (num1, num2):
+    return num1 - num2
+def perkalian (num1, num2):
+    return num1 * num2
+def pembagian (num1, num2):
+    if num2 == 0:
+        return num1 / num2
+    else: 
+        return "tidak dapat dibagi dengan nol"
+while True:
+    print("pilih operasi:")
+    print("1. penambahan")
+    print("2. pengurangan")
+    print("3. pembagian")
+    print("4. perkalian")
+    print("5. keluar")
+    
+    pilihan = input("masukan nomor operasi:")
+    
+    if pilihan == "5":
+        print("terima kasih! keluar dari kalkulator.")
+        break
+
+    if pilihan in ("masukan pilihan (1/2/3/4/5):"):
+        num1 = float(input("masukan angka pertama:"))
+        num2 = float(input("masukan angka kedua:"))
+        
+        if pilihan == "1":
+            hasil = penambahan(num1, num2)
+            print("hasil penambahan:", hasil)
+        elif pilihan == "2":
+            hasil = pengurangan (num1, num2)
+            print("hasil pengurangan:", hasil)
+        elif pilihan == "3":
+            hasil = perkalian(num1, num2)
+            print("hasil perkalian:", hasil)
+        elif pilihan == "4":
+            hasil = pembagian(num1, num2)
+            print("hasil pembagian:", hasil)
+    else:
+        print("pilihan tidak valid. silahkan pilih operasi yang benar")
+            
