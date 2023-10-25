@@ -1,9 +1,9 @@
 def hitung_angka_dibagi_habis(daftar_angka, pemisah):
-    jumlah = 0
+    total = 0
     for angka in daftar_angka:
         if angka % pemisah == 0:
-            jumlah += angka
-        return jumlah
+            total += angka
+        return total
 #contoh penggunaan fungsi
 daftar_angka1 = [20,40,80,100,120,140]
 pemisah1 = 20 
